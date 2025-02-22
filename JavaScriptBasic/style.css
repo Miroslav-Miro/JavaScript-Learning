@@ -1,48 +1,82 @@
-body{
-  background-color: #B48050;
-  margin: 0;
-  padding: 0;
-  font-family: "Fira Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
+/* General Page Styles */
+body {
+  background-color: #f6f5f3;
+  font-family: "Poppins", sans-serif;
   text-align: center;
-}
-table{
-  color: #5C3D2F;
-  font: 20px "Fira Sans", sans-serif;
-  margin: 0 auto;
+  padding: 40px;
 }
 
-td{
-  border: 4px solid #412017;
-  padding: 10px 20px; /* Increased padding for more room */
-  text-align: center;
-  background-color: #935027;
-  color: #F9E7B0;
+/* Heading Styles */
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #3d3d3f;
+  text-transform: uppercase;
+  border: 4px solid #3d3d3f;
+  display: inline-block;
+  padding: 10px 20px;
 }
 
-.hours{
-  background-color: #E1991D;
-  color: #F9E7B0;
+/* Table Styles */
+table {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.closed{
-  background-color: #412017;
-  color: #F9E7B0;
+/* Table Cells */
+td, th {
+  border: 2px solid #3d3d3f;
+  padding: 15px;
+  font-size: 18px;
 }
 
-th{
-  text-align: center;
-  font-size: 35px;
+/* Store Hours */
+.hours {
+  background-color: #7dce94;
+  color: #fff;
+  font-weight: bold;
 }
 
+.closed {
+  background-color: #d64550;
+  color: #fff;
+  font-weight: bold;
+}
 
-h1{
-  font-size: 100px;
-  padding: 0px;
-  margin: 0px 0 100px 0;
-  color:#5C3D2F
+/* Highlight Current Day */
+.current-day {
+  background-color: #7dce94 !important;
+  color: #fff !important;
+  font-weight: bold;
+  border-left: 5px solid #fff;
+}
+
+/* Button */
+.toggle-btn {
+  background: #3d3d3f;
+  color: #fff;
+  border: 3px solid #3d3d3f;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #7dce94;
+  border-color: #7dce94;
+}
+
+/* Store Status */
+p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3d3d3f;
+  margin-top: 10px;
 }
